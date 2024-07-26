@@ -1,27 +1,29 @@
+LipNet: Speech Recognition from Lip Movements
+LipNet is a deep neural network designed to recognize speech from lip movements. By leveraging a combination of convolutional and recurrent neural networks, LipNet analyzes sequences of frames from videos of individuals speaking and predicts the spoken words.
+
 Video Pre-processing
-•
-The videos are divided into 75 frames.
-•
-The frames are combined to create a gif of the video.
+Videos are divided into 75 frames.
+Frames are combined to create a GIF of the video.
 Model Architecture
-•
-CNN:
-•
-Applied conv3d, ReLU activation layer, and max pool 3.
-•
-Bidirectional LSTM:
-•
-Two bidirectional LSTM layers are applied.
-•
-Bidirectional LSTM is a type of recurrent neural network that processes the input in both forward and backward directions. This allows the model to capture temporal information from both past and future contexts.
-•
-Dropout layers are applied
-•
-Softmax activation function is applied.
+Convolutional Neural Network (CNN)
+Applied 3D convolution (conv3d)
+ReLU activation layer
+Max pooling (max pool 3)
+Bidirectional LSTM
+Two bidirectional LSTM layers are applied
+Bidirectional LSTM processes input in both forward and backward directions, capturing temporal information from past and future contexts.
+Dropout layers are applied to prevent overfitting.
+Softmax activation function is used for the output layer.
 Training
-•
-The processed gif input is given to TensorFlow for training.
-•
-The model is trained using 200 videos each of 3 speakers (2 being male and 1being female)
-•
-The model is trained for 100 epochs.
+The processed GIF input is fed into TensorFlow for training.
+The model is trained using 200 videos from 3 speakers (2 male, 1 female).
+Training is conducted over 100 epochs.
+This repository contains the code and resources for LipNet, making it a powerful tool for speech recognition from lip movements.
+
+
+
+
+
+
+
+
